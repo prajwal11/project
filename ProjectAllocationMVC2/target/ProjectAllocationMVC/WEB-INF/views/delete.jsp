@@ -15,16 +15,17 @@
 	<br />
 	<table>
 		<tr>
-			<td>Employee Id:<br /></td>
+			<td>Employee Name:<br /></td>
 			<form action="/ProjectAllocationMVC/deleteval" method="GET">
-				<td><input type="text" name="empid"></input><br /></td>
+				<td><input type="text" name="employeeName"></input><br /></td>
 		</tr>
 		<tr>
-			<td>Project Id:<br /></td>
-			<td><input type="text" name="projid"></input><br /></td>
+			<td>Project Name:<br /></td>
+			<td><input type="text" name="projectName"></input><br /></td>
 		</tr>
 	</table>
 	<br />
+	<h4>${employeeName}${message}${projectName}</h4>
 	<input type="submit" name="Submit"></input>
 	<input type="reset" name="reset"></input>
 	</form>

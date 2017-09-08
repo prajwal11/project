@@ -11,5 +11,6 @@ import com.thoughtclan.ProjectAllocationMVC.entity.Project;
 @Repository
 public interface ProjectRepository extends CrudRepository<Project, String>{
 
-	List<Project> findByProjectName(String projectName);
+	List<Project> findAllByProjectName(String projectName);
+	List<Project> findAllByProjectId(String projectId);
 }

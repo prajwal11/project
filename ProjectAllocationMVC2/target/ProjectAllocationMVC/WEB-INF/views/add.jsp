@@ -31,7 +31,7 @@
 		<table>
 			<tr>
 				<td>Employee Id:<br /></td>
-				<td><form:select path="empId">
+				<td><form:select path="employeeId">
 						<form:option value="0" label="Select" />
 						<form:options items="${emplist}" itemValue="employeeId"
 							itemLabel="employeeName" />
@@ -40,7 +40,7 @@
 			<br />
 			<tr>
 				<td>Project Id:</td>
-				<td><form:select path="projId">
+				<td><form:select path="projectId">
 						<form:option value="0" label="Select" />
 						<form:options items="${projlist}" itemValue="projectId"
 							itemLabel="projectName" />
@@ -58,6 +58,7 @@
 				 placeholder="e.g. 50"/>
 		</div>
 		<br>
+		<h4>${message }${workload }</h4>
 		<input type="submit" name="Submit" onClick="popup()"></input>
 		<input type="reset" name="reset"></input>
 	</form:form>

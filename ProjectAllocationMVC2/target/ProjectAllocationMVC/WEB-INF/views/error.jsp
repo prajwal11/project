@@ -7,7 +7,8 @@
 <body>
 <%@include file="menu.jsp" %>
           <%--   <h1 align="center">PROJECT ALLOCATION</h1>--%>
-Enter Valid Data
+Enter Valid Data<br/>
+${message}
 
 </body>
 </html>
